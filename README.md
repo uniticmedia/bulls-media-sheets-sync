@@ -1,5 +1,8 @@
 # Sheets Sync (Google Sheets to MySQL)
 
+> **Live Demo:** https://bulls-media.uniticmedia.com  
+> **Login:** admin / Kevi1234?
+
 This tool automatically reads data from multiple Google Sheets files and stores it in a MySQL database once a day. Everything is driven by configuration: which files to read, which tabs, which columns, and where each column goes in the database.
 
 It's built with **Laravel** and **MySQL**, and comes with a simple admin UI to manage the sync settings.
