@@ -83,6 +83,7 @@ When deploying on a production server (e.g., with PHP-FPM), use the **absolute p
 
 ```dotenv
 GOOGLE_SHEETS_CREDENTIALS=/path/to/your/project/storage/app/google/service-account.json
+```
 
 ```bash
 mysql -u root -e "CREATE DATABASE sheets_sync CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
