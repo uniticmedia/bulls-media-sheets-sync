@@ -10,6 +10,19 @@
 > Username: `bulls_user`  
 > Password: `Kevi1234!`
 
+
+## How to test the live demo
+
+1. Create a Google Sheet with columns like `date`, `product_name`, `price`, `amount`.
+2. Click **Share** and add this email as **Viewer**: `sheets-sync-bot@powerful-host-515816-a7.iam.gserviceaccount.com`
+3. Go to https://bulls-media.uniticmedia.com, log in, and add your spreadsheet URL under **Sources -> Add file**.
+4. Create a mapping (e.g., `Sheet1` -> `sales`).
+5. Click **Run** and check the result in the run history.
+
+The data will be stored in the `sales` table in the demo database.
+
+
+
 This tool automatically reads data from multiple Google Sheets files and stores it in a MySQL database once a day. Everything is driven by configuration: which files to read, which tabs, which columns, and where each column goes in the database.
 
 It's built with **Laravel** and **MySQL**, and comes with a simple admin UI to manage the sync settings.
