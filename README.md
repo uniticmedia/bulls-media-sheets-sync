@@ -39,7 +39,7 @@ On a fresh Ubuntu 22.04 / 24.04 server, from the project root:
 sudo ./scripts/setup-ubuntu.sh --with-demo --with-nginx
 ```
 
-The script is idempotent. It installs PHP 8.3, MySQL and Composer, creates the database and user, writes `.env`,
+The script is idempotent. It installs PHP 8.4, MySQL and Composer, creates the database and user, writes `.env`,
 installs dependencies, runs the migrations, and adds the cron entry that triggers the Laravel scheduler.
 At the end it prints the admin password. Options:
 

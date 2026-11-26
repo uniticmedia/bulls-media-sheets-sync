@@ -5,7 +5,7 @@
 #   sudo ./scripts/setup-ubuntu.sh [--with-demo] [--with-nginx] [--production]
 #
 # What it does (safe to run again):
-#   1. installs PHP 8.3 + extensions, MySQL, Git and Composer
+#   1. installs PHP 8.4 + extensions, MySQL, Git and Composer
 #   2. creates the MySQL database and user
 #   3. installs PHP dependencies, writes .env, generates the application key
 #   4. runs the database migrations (and optionally seeds the demo mapping)
@@ -55,7 +55,7 @@ fi
 # The user that runs the scheduler (cron) and, with --with-nginx, PHP-FPM. Becomes www-data in nginx mode.
 RUN_USER="$APP_USER"
 
-PHP_VERSION="8.3"
+PHP_VERSION="8.4"
 DB_NAME="${DB_NAME:-sheets_sync}"
 DB_USER="${DB_USER:-sheets_sync}"
 
