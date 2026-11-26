@@ -10,6 +10,7 @@
 > Username: `bulls_user`  
 > Password: `Kevi1234!`
 
+---
 
 ## How to test the live demo
 
@@ -21,7 +22,7 @@
 
 The data will be stored in the `sales` table in the demo database.
 
-
+---
 
 This tool automatically reads data from multiple Google Sheets files and stores it in a MySQL database once a day. Everything is driven by configuration: which files to read, which tabs, which columns, and where each column goes in the database.
 
