@@ -78,6 +78,12 @@ SHEETS_ADMIN_USER=admin
 SHEETS_ADMIN_PASSWORD=choose-a-long-password
 ```
 
+## Notes for server deployment
+When deploying on a production server (e.g., with PHP-FPM), use the **absolute path** in `.env` to avoid file-not-found errors:
+
+```dotenv
+GOOGLE_SHEETS_CREDENTIALS=/path/to/your/project/storage/app/google/service-account.json
+
 ```bash
 mysql -u root -e "CREATE DATABASE sheets_sync CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
 php artisan migrate
